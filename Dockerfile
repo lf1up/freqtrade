@@ -29,6 +29,7 @@ RUN  apt-get update \
 
 # Install additional project dependencies
 RUN apt-get update && apt-get install -y curl unzip && \
+    mkdir /freqtrade/user_data/ && \
     curl -o /freqtrade/user_data/default.zip 'https://lab-settings.fra1.cdn.digitaloceanspaces.com/user_data/default.zip' && \
     unzip -o /freqtrade/user_data/default.zip -d user_data/ && \
     rm /freqtrade/user_data/default.zip
