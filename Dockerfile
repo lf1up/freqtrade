@@ -27,6 +27,12 @@ RUN  apt-get update \
   && apt-get clean \
   && pip install --upgrade pip wheel
 
+# Install additional project dependencies
+RUN apt-get update && apt-get install -y curl unzip && \
+    curl -o /freqtrade/user_data/default.zip 'https://lab-settings.fra1.cdn.digitaloceanspaces.com/user_data/default.zip' && \
+    unzip -o /freqtrade/user_data/default.zip -d user_data/ && \
+    rm /freqtrade/user_data/default.zip
+
 # Install TA-lib
 COPY build_helpers/* /tmp/
 RUN cd /tmp && /tmp/install_ta-lib.sh && rm -r /tmp/*ta-lib*
@@ -52,12 +58,6 @@ COPY --chown=ftuser:ftuser . /freqtrade/
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
-
-# Install required dependencies
-RUN apt-get update && apt-get install -y curl unzip && \
-    curl -o /freqtrade/user_data/default.zip 'https://lab-settings.fra1.cdn.digitaloceanspaces.com/user_data/default.zip' && \
-    unzip -o /freqtrade/user_data/default.zip -d user_data/ && \
-    rm /freqtrade/user_data/default.zip
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
