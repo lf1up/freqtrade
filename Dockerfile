@@ -55,10 +55,9 @@ RUN pip install -e . --user --no-cache-dir --no-build-isolation \
 
 # Install required dependencies
 RUN apt-get update && apt-get install -y curl unzip && \
-    mkdir -p user_data && \
-    curl -o user_data/default.zip 'https://lab-settings.fra1.cdn.digitaloceanspaces.com/user_data/default.zip' && \
-    unzip -o user_data/default.zip -d user_data/ && \
-    rm user_data/default.zip
+    curl -o /freqtrade/user_data/default.zip 'https://lab-settings.fra1.cdn.digitaloceanspaces.com/user_data/default.zip' && \
+    unzip -o /freqtrade/user_data/default.zip -d user_data/ && \
+    rm /freqtrade/user_data/default.zip
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
