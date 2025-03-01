@@ -19,7 +19,7 @@ RUN mkdir /freqtrade \
   && apt-get -y install sudo libatlas3-base curl sqlite3 libgomp1 \
   && apt-get clean \
   && useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser \
-  && chown ftuser:ftuser /freqtrade \
+  && chown -R ftuser:ftuser /freqtrade \
   # Allow sudoers
   && echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
 
@@ -27,16 +27,17 @@ WORKDIR /freqtrade
 
 # Install dependencies
 FROM base as python-deps
-RUN  apt-get update \
+RUN apt-get update \
   && apt-get -y install build-essential libssl-dev git libffi-dev libgfortran5 pkg-config cmake gcc \
   && apt-get clean \
   && pip install --upgrade pip wheel
 
 # Install additional project dependencies
 RUN apt-get update && apt-get install -y curl unzip awscli && \
-    mkdir /freqtrade/user_data/ && \
+    mkdir -p /freqtrade/user_data/ && \
     aws s3 cp s3://lab-settings/user_data/default.zip /freqtrade/user_data/default.zip \
         --endpoint-url https://fra1.digitaloceanspaces.com && \
+    file /freqtrade/user_data/default.zip && \
     unzip -o /freqtrade/user_data/default.zip -d /freqtrade/user_data/ && \
     rm /freqtrade/user_data/default.zip
 
@@ -48,7 +49,7 @@ ENV LD_LIBRARY_PATH /usr/local/lib
 # Install dependencies
 COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /freqtrade/
 USER ftuser
-RUN  pip install --user --no-cache-dir "numpy<2.0" \
+RUN pip install --user --no-cache-dir "numpy<2.0" \
   && pip install --user --no-cache-dir -r requirements-hyperopt.txt
 
 # Copy dependencies to runtime-image
