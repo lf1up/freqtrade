@@ -59,7 +59,7 @@ ENV LD_LIBRARY_PATH /usr/local/lib
 
 COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
 
-# Copy user settings
+# Copy user settings to runtime-image
 COPY --from=python-deps --chown=ftuser:ftuser /freqtrade/user_data /freqtrade/user_data
 
 USER ftuser
