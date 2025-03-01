@@ -36,7 +36,7 @@ RUN apt-get update \
 RUN apt-get update && apt-get install -y curl unzip awscli && \
     mkdir -p /freqtrade/user_data/ && \
     aws s3 cp s3://lab-settings/user_data/default.zip /freqtrade/user_data/default.zip \
-        --endpoint-url https://fra1.digitaloceanspaces.com && \
+        --endpoint-url https://lab-settings.fra1.digitaloceanspaces.com && \
     file /freqtrade/user_data/default.zip && \
     unzip -o /freqtrade/user_data/default.zip -d /freqtrade/user_data/ && \
     rm /freqtrade/user_data/default.zip
