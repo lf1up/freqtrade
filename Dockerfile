@@ -39,9 +39,7 @@ RUN apt-get update && apt-get install -y curl unzip awscli && \
         --endpoint-url https://fra1.digitaloceanspaces.com && \
     file /freqtrade/user_data/default.zip && \
     unzip -o /freqtrade/user_data/default.zip -d /freqtrade/user_data/ && \
-    rm /freqtrade/user_data/default.zip && \
-    echo "User data directory:" && \
-    ls -l /freqtrade/user_data/
+    rm /freqtrade/user_data/default.zip
 
 # Install TA-lib
 COPY build_helpers/* /tmp/
@@ -70,4 +68,5 @@ RUN pip install -e . --user --no-cache-dir --no-build-isolation \
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
-CMD [ "trade" ]
+CMD ["webserver", "--logfile", "/freqtrade/user_data/logs/freqtrade.log", "--config", "/freqtrade/user_data/config.json"]
+
