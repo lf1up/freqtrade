@@ -8,6 +8,11 @@ ENV PYTHONFAULTHANDLER 1
 ENV PATH=/home/ftuser/.local/bin:$PATH
 ENV FT_APP_ENV="docker"
 
+# Declare additional build arguments for project dependencies
+ARG AWS_ACCESS_KEY_ID
+ARG AWS_SECRET_ACCESS_KEY
+ARG AWS_DEFAULT_REGION
+
 # Prepare environment
 RUN mkdir /freqtrade \
   && apt-get update \
@@ -27,14 +32,9 @@ RUN  apt-get update \
   && apt-get clean \
   && pip install --upgrade pip wheel
 
-# Declare additional build arguments for project dependencies
-ARG AWS_ACCESS_KEY_ID
-ARG AWS_SECRET_ACCESS_KEY
-ARG AWS_DEFAULT_REGION
-
 # Install additional project dependencies
 RUN apt-get update && apt-get install -y curl unzip awscli && \
-    mkdir -p /freqtrade/user_data/ && \
+    mkdir /freqtrade/user_data/ && \
     aws s3 cp s3://lab-settings/user_data/default.zip /freqtrade/user_data/default.zip \
         --endpoint-url https://fra1.digitaloceanspaces.com && \
     unzip -o /freqtrade/user_data/default.zip -d /freqtrade/user_data/ && \
@@ -63,7 +63,6 @@ USER ftuser
 COPY --chown=ftuser:ftuser . /freqtrade/
 
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
-  && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
 
 ENTRYPOINT ["freqtrade"]
