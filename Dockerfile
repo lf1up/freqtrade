@@ -27,6 +27,11 @@ RUN  apt-get update \
   && apt-get clean \
   && pip install --upgrade pip wheel
 
+# Declare additional build arguments for project dependencies
+ARG AWS_ACCESS_KEY_ID
+ARG AWS_SECRET_ACCESS_KEY
+ARG AWS_DEFAULT_REGION
+
 # Install additional project dependencies
 RUN apt-get update && apt-get install -y curl unzip awscli && \
     mkdir -p /freqtrade/user_data/ && \
