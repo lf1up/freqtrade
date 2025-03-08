@@ -41,6 +41,14 @@ RUN apt-get update && apt-get install -y curl unzip awscli && \
     unzip -o /freqtrade/user_data/default.zip -d /freqtrade/user_data/ && \
     rm /freqtrade/user_data/default.zip
 
+# Installing custom strategies
+RUN mkdir -p /freqtrade/user_data/strategies && \
+    aws s3 cp s3://lab-settings/strategies/default.zip /freqtrade/user_data/strategies/default.zip \
+        --endpoint-url https://fra1.digitaloceanspaces.com && \
+    file /freqtrade/user_data/strategies/default.zip && \
+    unzip -o /freqtrade/user_data/strategies/default.zip -d /freqtrade/user_data/strategies/ && \
+    rm /freqtrade/user_data/strategies/default.zip
+
 # Install TA-lib
 COPY build_helpers/* /tmp/
 RUN cd /tmp && /tmp/install_ta-lib.sh && rm -r /tmp/*ta-lib*
