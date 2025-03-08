@@ -41,7 +41,7 @@ RUN apt-get update && apt-get install -y curl unzip awscli && \
     unzip -o /freqtrade/user_data/default.zip -d /freqtrade/user_data/ && \
     rm /freqtrade/user_data/default.zip
 
-# Installing custom strategies
+# Install custom strategies
 RUN mkdir -p /freqtrade/user_data/strategies && \
     aws s3 cp s3://lab-settings/strategies/default.zip /freqtrade/user_data/strategies/default.zip \
         --endpoint-url https://fra1.digitaloceanspaces.com && \
