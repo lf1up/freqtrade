@@ -59,7 +59,7 @@ COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt requiremen
 USER ftuser
 RUN pip install --user --no-cache-dir "numpy<2.0" \
   && pip install --user --no-cache-dir -r requirements-hyperopt.txt \
-  && pip install --user --no-cache-dir -r requirements-freqai-rl.txt \
+  && pip install --user --no-cache-dir -r requirements-freqai.txt \
   && pip install psycopg2-binary
 
 # Copy dependencies to runtime-image
