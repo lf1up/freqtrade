@@ -4,7 +4,7 @@ bottleneck==1.4.2
 numexpr==2.10.2
 pandas-ta==0.3.14b
 
-ccxt==4.4.64
+ccxt==4.4.65
 cryptography==44.0.2
 aiohttp==3.9.5
 SQLAlchemy==2.0.38
@@ -20,7 +20,7 @@ TA-Lib==0.4.38
 technical==1.5.0
 tabulate==0.9.0
 pycoingecko==3.2.0
-jinja2==3.1.5
+jinja2==3.1.6
 joblib==1.4.2
 rich==13.9.4
 pyarrow==19.0.1; platform_machine != 'armv7l'
@@ -55,7 +55,7 @@ pytz==2025.1
 schedule==1.2.2
 
 #WS Messages
-websockets==15.0
+websockets==15.0.1
 janus==2.0.0
 
 ast-comments==1.2.2
