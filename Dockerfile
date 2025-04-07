@@ -60,7 +60,8 @@ USER ftuser
 RUN pip install --user --no-cache-dir "numpy<2.0" \
   && pip install --user --no-cache-dir -r requirements-hyperopt.txt \
   && pip install --user --no-cache-dir -r requirements-freqai.txt \
-  && pip install psycopg2-binary
+  && pip install psycopg2-binary \
+  && pip install git+https://github.com/freqtrade/technical
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
