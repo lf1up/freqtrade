@@ -13,14 +13,17 @@
         <link rel="canonical" href="https://www.freqtrade.io/en/stable/faq/">
       
       
-        <link rel="prev" href="../edge/">
+        <link rel="prev" href="../sql_cheatsheet/">
       
       
         <link rel="next" href="../strategy_migration/">
       
       
+        
+      
+      
       <link rel="icon" href="../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
@@ -28,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -66,7 +69,6 @@
     <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
   
 
-    
     
     
   </head>
@@ -165,11 +167,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -206,13 +210,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/freqtrade/freqtrade" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -259,7 +264,7 @@
       <a href="https://github.com/freqtrade/freqtrade" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -279,10 +284,16 @@
       <a href=".." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
     
   </span>
+  
   
 
       </a>
@@ -300,10 +311,16 @@
       <a href="../docker_quickstart/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Quickstart with Docker
+  
+
     
   </span>
+  
   
 
       </a>
@@ -321,6 +338,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -331,10 +349,16 @@
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Installation
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -343,7 +367,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Installation
+            
+  
+    Installation
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -357,10 +385,16 @@
       <a href="../installation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Linux/MacOS/Raspberry
+  
+
     
   </span>
+  
   
 
       </a>
@@ -379,10 +413,16 @@
       <a href="../windows_installation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Windows
+  
+
     
   </span>
+  
   
 
       </a>
@@ -408,10 +448,16 @@
       <a href="../bot-basics/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Freqtrade Basics
+  
+
     
   </span>
+  
   
 
       </a>
@@ -429,10 +475,16 @@
       <a href="../configuration/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Configuration
+  
+
     
   </span>
+  
   
 
       </a>
@@ -450,10 +502,16 @@
       <a href="../strategy-101/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Strategy Quickstart
+  
+
     
   </span>
+  
   
 
       </a>
@@ -471,10 +529,16 @@
       <a href="../strategy-customization/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Strategy Customization
+  
+
     
   </span>
+  
   
 
       </a>
@@ -492,10 +556,16 @@
       <a href="../strategy-callbacks/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Strategy Callbacks
+  
+
     
   </span>
+  
   
 
       </a>
@@ -513,10 +583,16 @@
       <a href="../stoploss/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Stoploss
+  
+
     
   </span>
+  
   
 
       </a>
@@ -534,10 +610,16 @@
       <a href="../plugins/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Plugins
+  
+
     
   </span>
+  
   
 
       </a>
@@ -555,10 +637,16 @@
       <a href="../bot-usage/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Start the bot
+  
+
     
   </span>
+  
   
 
       </a>
@@ -576,6 +664,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -586,10 +675,16 @@
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Control the bot
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -598,7 +693,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
-            Control the bot
+            
+  
+    Control the bot
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -612,10 +711,16 @@
       <a href="../telegram-usage/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Telegram
+  
+
     
   </span>
+  
   
 
       </a>
@@ -634,10 +739,16 @@
       <a href="../freq-ui/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     freqUI
+  
+
     
   </span>
+  
   
 
       </a>
@@ -656,10 +767,16 @@
       <a href="../rest-api/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     REST API
+  
+
     
   </span>
+  
   
 
       </a>
@@ -678,10 +795,16 @@
       <a href="../webhook-config/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Web Hook
+  
+
     
   </span>
+  
   
 
       </a>
@@ -707,10 +830,16 @@
       <a href="../data-download/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Data Downloading
+  
+
     
   </span>
+  
   
 
       </a>
@@ -728,10 +857,16 @@
       <a href="../backtesting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Backtesting
+  
+
     
   </span>
+  
   
 
       </a>
@@ -749,10 +884,16 @@
       <a href="../hyperopt/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Hyperopt
+  
+
     
   </span>
+  
   
 
       </a>
@@ -770,6 +911,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -780,10 +922,16 @@
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     FreqAI
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -792,7 +940,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
-            FreqAI
+            
+  
+    FreqAI
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -806,10 +958,16 @@
       <a href="../freqai/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
     
   </span>
+  
   
 
       </a>
@@ -828,10 +986,16 @@
       <a href="../freqai-configuration/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Configuration
+  
+
     
   </span>
+  
   
 
       </a>
@@ -850,10 +1014,16 @@
       <a href="../freqai-parameter-table/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Parameter table
+  
+
     
   </span>
+  
   
 
       </a>
@@ -872,10 +1042,16 @@
       <a href="../freqai-feature-engineering/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Feature engineering
+  
+
     
   </span>
+  
   
 
       </a>
@@ -894,10 +1070,16 @@
       <a href="../freqai-running/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Running FreqAI
+  
+
     
   </span>
+  
   
 
       </a>
@@ -916,10 +1098,16 @@
       <a href="../freqai-reinforcement-learning/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Reinforcement Learning
+  
+
     
   </span>
+  
   
 
       </a>
@@ -938,10 +1126,16 @@
       <a href="../freqai-developers/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Developer guide
+  
+
     
   </span>
+  
   
 
       </a>
@@ -967,10 +1161,16 @@
       <a href="../leverage/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Short / Leverage
+  
+
     
   </span>
+  
   
 
       </a>
@@ -988,10 +1188,16 @@
       <a href="../utils/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Utility Sub-commands
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1009,10 +1215,16 @@
       <a href="../plotting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Plotting
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1030,10 +1242,16 @@
       <a href="../exchanges/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exchange-specific Notes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1051,6 +1269,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -1061,10 +1280,16 @@
           <label class="md-nav__link" for="__nav_21" id="__nav_21_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Data Analysis
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1073,7 +1298,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_21_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_21">
             <span class="md-nav__icon md-icon"></span>
-            Data Analysis
+            
+  
+    Data Analysis
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1087,10 +1316,16 @@
       <a href="../data-analysis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Jupyter Notebooks
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1109,10 +1344,16 @@
       <a href="../strategy_analysis_example/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Strategy analysis
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1131,10 +1372,16 @@
       <a href="../advanced-backtesting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Backtest analysis
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1160,6 +1407,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -1170,10 +1418,16 @@
           <label class="md-nav__link" for="__nav_22" id="__nav_22_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Advanced Topics
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1182,7 +1436,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_22_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_22">
             <span class="md-nav__icon md-icon"></span>
-            Advanced Topics
+            
+  
+    Advanced Topics
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1196,10 +1454,16 @@
       <a href="../advanced-setup/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Advanced Post-installation Tasks
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1218,10 +1482,16 @@
       <a href="../trade-object/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Trade Object
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1240,10 +1510,16 @@
       <a href="../lookahead-analysis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Lookahead analysis
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1262,10 +1538,16 @@
       <a href="../recursive-analysis/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Recursive analysis
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1284,10 +1566,16 @@
       <a href="../strategy-advanced/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Advanced Strategy
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1306,10 +1594,16 @@
       <a href="../advanced-hyperopt/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Advanced Hyperopt
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1328,10 +1622,16 @@
       <a href="../advanced-orderflow/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Orderflow
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1350,10 +1650,16 @@
       <a href="../producer-consumer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Producer/Consumer mode
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1372,32 +1678,16 @@
       <a href="../sql_cheatsheet/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     SQL Cheat-sheet
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../edge/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Edge Positioning
-    
-  </span>
   
 
       </a>
@@ -1432,10 +1722,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1444,10 +1740,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1470,7 +1772,9 @@
         <li class="md-nav__item">
   <a href="#supported-markets" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported Markets
+      
+        Supported Markets
+      
     </span>
   </a>
   
@@ -1480,7 +1784,9 @@
           <li class="md-nav__item">
   <a href="#can-my-bot-open-short-positions" class="md-nav__link">
     <span class="md-ellipsis">
-      Can my bot open short positions?
+      
+        Can my bot open short positions?
+      
     </span>
   </a>
   
@@ -1489,7 +1795,9 @@
           <li class="md-nav__item">
   <a href="#can-my-bot-trade-options-or-futures" class="md-nav__link">
     <span class="md-ellipsis">
-      Can my bot trade options or futures?
+      
+        Can my bot trade options or futures?
+      
     </span>
   </a>
   
@@ -1503,7 +1811,9 @@
         <li class="md-nav__item">
   <a href="#beginner-tips-tricks" class="md-nav__link">
     <span class="md-ellipsis">
-      Beginner Tips &amp; Tricks
+      
+        Beginner Tips &amp; Tricks
+      
     </span>
   </a>
   
@@ -1512,7 +1822,9 @@
         <li class="md-nav__item">
   <a href="#freqtrade-common-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Freqtrade common questions
+      
+        Freqtrade common questions
+      
     </span>
   </a>
   
@@ -1522,7 +1834,9 @@
           <li class="md-nav__item">
   <a href="#can-freqtrade-open-multiple-positions-on-the-same-pair-in-parallel" class="md-nav__link">
     <span class="md-ellipsis">
-      Can freqtrade open multiple positions on the same pair in parallel?
+      
+        Can freqtrade open multiple positions on the same pair in parallel?
+      
     </span>
   </a>
   
@@ -1531,7 +1845,9 @@
           <li class="md-nav__item">
   <a href="#the-bot-does-not-start" class="md-nav__link">
     <span class="md-ellipsis">
-      The bot does not start
+      
+        The bot does not start
+      
     </span>
   </a>
   
@@ -1540,7 +1856,9 @@
           <li class="md-nav__item">
   <a href="#the-bot-starts-but-in-stopped-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      The bot starts, but in STOPPED mode
+      
+        The bot starts, but in STOPPED mode
+      
     </span>
   </a>
   
@@ -1549,7 +1867,9 @@
           <li class="md-nav__item">
   <a href="#i-have-waited-5-minutes-why-hasnt-the-bot-made-any-trades-yet" class="md-nav__link">
     <span class="md-ellipsis">
-      I have waited 5 minutes, why hasn't the bot made any trades yet?
+      
+        I have waited 5 minutes, why hasn't the bot made any trades yet?
+      
     </span>
   </a>
   
@@ -1558,7 +1878,9 @@
           <li class="md-nav__item">
   <a href="#i-have-made-12-trades-already-why-is-my-total-profit-negative" class="md-nav__link">
     <span class="md-ellipsis">
-      I have made 12 trades already, why is my total profit negative?
+      
+        I have made 12 trades already, why is my total profit negative?
+      
     </span>
   </a>
   
@@ -1567,7 +1889,9 @@
           <li class="md-nav__item">
   <a href="#id-like-to-make-changes-to-the-config-can-i-do-that-without-having-to-kill-the-bot" class="md-nav__link">
     <span class="md-ellipsis">
-      I’d like to make changes to the config. Can I do that without having to kill the bot?
+      
+        I’d like to make changes to the config. Can I do that without having to kill the bot?
+      
     </span>
   </a>
   
@@ -1576,7 +1900,9 @@
           <li class="md-nav__item">
   <a href="#why-does-my-bot-not-sell-everything-it-bought" class="md-nav__link">
     <span class="md-ellipsis">
-      Why does my bot not sell everything it bought?
+      
+        Why does my bot not sell everything it bought?
+      
     </span>
   </a>
   
@@ -1585,7 +1911,9 @@
           <li class="md-nav__item">
   <a href="#i-deposited-more-funds-to-the-exchange-but-my-bot-doesnt-recognize-this" class="md-nav__link">
     <span class="md-ellipsis">
-      I deposited more funds to the exchange, but my bot doesn't recognize this
+      
+        I deposited more funds to the exchange, but my bot doesn't recognize this
+      
     </span>
   </a>
   
@@ -1594,7 +1922,9 @@
           <li class="md-nav__item">
   <a href="#i-want-to-use-incomplete-candles" class="md-nav__link">
     <span class="md-ellipsis">
-      I want to use incomplete candles
+      
+        I want to use incomplete candles
+      
     </span>
   </a>
   
@@ -1603,7 +1933,20 @@
           <li class="md-nav__item">
   <a href="#is-there-a-setting-to-only-exit-the-trades-being-held-and-not-perform-any-new-entries" class="md-nav__link">
     <span class="md-ellipsis">
-      Is there a setting to only Exit the trades being held and not perform any new Entries?
+      
+        Is there a setting to only Exit the trades being held and not perform any new Entries?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-sold-the-bots-capital-and-now-theres-errors-in-the-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I sold the bot's capital and now there's errors in the log
+      
     </span>
   </a>
   
@@ -1612,7 +1955,9 @@
           <li class="md-nav__item">
   <a href="#i-want-to-run-multiple-bots-on-the-same-machine" class="md-nav__link">
     <span class="md-ellipsis">
-      I want to run multiple bots on the same machine
+      
+        I want to run multiple bots on the same machine
+      
     </span>
   </a>
   
@@ -1621,7 +1966,9 @@
           <li class="md-nav__item">
   <a href="#im-getting-impossible-to-load-strategy-when-starting-the-bot" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting "Impossible to load Strategy" when starting the bot
+      
+        I'm getting "Impossible to load Strategy" when starting the bot
+      
     </span>
   </a>
   
@@ -1630,7 +1977,9 @@
           <li class="md-nav__item">
   <a href="#im-getting-missing-data-fillup-messages-in-the-log" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting "Missing data fillup" messages in the log
+      
+        I'm getting "Missing data fillup" messages in the log
+      
     </span>
   </a>
   
@@ -1639,7 +1988,9 @@
           <li class="md-nav__item">
   <a href="#im-getting-price-jump-between-2-candles-detected" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting "Price jump between 2 candles detected"
+      
+        I'm getting "Price jump between 2 candles detected"
+      
     </span>
   </a>
   
@@ -1648,7 +1999,9 @@
           <li class="md-nav__item">
   <a href="#i-want-to-reset-the-bots-database" class="md-nav__link">
     <span class="md-ellipsis">
-      I want to reset the bot's database
+      
+        I want to reset the bot's database
+      
     </span>
   </a>
   
@@ -1657,7 +2010,20 @@
           <li class="md-nav__item">
   <a href="#im-getting-outdated-history-for-pair-xxx-in-the-log" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting "Outdated history for pair xxx" in the log
+      
+        I'm getting "Outdated history for pair xxx" in the log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-get-the-message-couldnt-reuse-watch-for-xxx-in-the-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I get the message "Couldn't reuse watch for xxx" in the log
+      
     </span>
   </a>
   
@@ -1666,7 +2032,9 @@
           <li class="md-nav__item">
   <a href="#im-getting-the-exchange-xxx-does-not-support-market-orders-message-and-cannot-run-my-strategy" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting the "Exchange XXX does not support market orders." message and cannot run my strategy
+      
+        I'm getting the "Exchange XXX does not support market orders." message and cannot run my strategy
+      
     </span>
   </a>
   
@@ -1675,7 +2043,9 @@
           <li class="md-nav__item">
   <a href="#im-trying-to-start-the-bot-live-but-get-an-api-permission-error" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm trying to start the bot live, but get an API permission error
+      
+        I'm trying to start the bot live, but get an API permission error
+      
     </span>
   </a>
   
@@ -1684,7 +2054,9 @@
           <li class="md-nav__item">
   <a href="#how-do-i-search-the-bot-logs-for-something" class="md-nav__link">
     <span class="md-ellipsis">
-      How do I search the bot logs for something?
+      
+        How do I search the bot logs for something?
+      
     </span>
   </a>
   
@@ -1698,7 +2070,9 @@
         <li class="md-nav__item">
   <a href="#hyperopt-module" class="md-nav__link">
     <span class="md-ellipsis">
-      Hyperopt module
+      
+        Hyperopt module
+      
     </span>
   </a>
   
@@ -1708,7 +2082,9 @@
           <li class="md-nav__item">
   <a href="#why-does-freqtrade-not-have-gpu-support" class="md-nav__link">
     <span class="md-ellipsis">
-      Why does freqtrade not have GPU support?
+      
+        Why does freqtrade not have GPU support?
+      
     </span>
   </a>
   
@@ -1717,7 +2093,9 @@
           <li class="md-nav__item">
   <a href="#how-many-epochs-do-i-need-to-get-a-good-hyperopt-result" class="md-nav__link">
     <span class="md-ellipsis">
-      How many epochs do I need to get a good Hyperopt result?
+      
+        How many epochs do I need to get a good Hyperopt result?
+      
     </span>
   </a>
   
@@ -1726,31 +2104,9 @@
           <li class="md-nav__item">
   <a href="#why-does-it-take-a-long-time-to-run-hyperopt" class="md-nav__link">
     <span class="md-ellipsis">
-      Why does it take a long time to run hyperopt?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#edge-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      Edge module
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Edge module">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#edge-implements-interesting-approach-for-controlling-position-size-is-there-any-theory-behind-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      Edge implements interesting approach for controlling position size, is there any theory behind it?
+        Why does it take a long time to run hyperopt?
+      
     </span>
   </a>
   
@@ -1764,7 +2120,20 @@
         <li class="md-nav__item">
   <a href="#official-channels" class="md-nav__link">
     <span class="md-ellipsis">
-      Official channels
+      
+        Official channels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support policy
+      
     </span>
   </a>
   
@@ -1773,7 +2142,9 @@
         <li class="md-nav__item">
   <a href="#freqtrade-token" class="md-nav__link">
     <span class="md-ellipsis">
-      "Freqtrade token"
+      
+        "Freqtrade token"
+      
     </span>
   </a>
   
@@ -1797,10 +2168,16 @@
       <a href="../strategy_migration/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Strategy migration
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1818,10 +2195,16 @@
       <a href="../updating/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Updating Freqtrade
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1839,10 +2222,16 @@
       <a href="../deprecated/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Deprecated Features
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1860,10 +2249,16 @@
       <a href="../developer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contributors Guide
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1902,7 +2297,9 @@
         <li class="md-nav__item">
   <a href="#supported-markets" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported Markets
+      
+        Supported Markets
+      
     </span>
   </a>
   
@@ -1912,7 +2309,9 @@
           <li class="md-nav__item">
   <a href="#can-my-bot-open-short-positions" class="md-nav__link">
     <span class="md-ellipsis">
-      Can my bot open short positions?
+      
+        Can my bot open short positions?
+      
     </span>
   </a>
   
@@ -1921,7 +2320,9 @@
           <li class="md-nav__item">
   <a href="#can-my-bot-trade-options-or-futures" class="md-nav__link">
     <span class="md-ellipsis">
-      Can my bot trade options or futures?
+      
+        Can my bot trade options or futures?
+      
     </span>
   </a>
   
@@ -1935,7 +2336,9 @@
         <li class="md-nav__item">
   <a href="#beginner-tips-tricks" class="md-nav__link">
     <span class="md-ellipsis">
-      Beginner Tips &amp; Tricks
+      
+        Beginner Tips &amp; Tricks
+      
     </span>
   </a>
   
@@ -1944,7 +2347,9 @@
         <li class="md-nav__item">
   <a href="#freqtrade-common-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Freqtrade common questions
+      
+        Freqtrade common questions
+      
     </span>
   </a>
   
@@ -1954,7 +2359,9 @@
           <li class="md-nav__item">
   <a href="#can-freqtrade-open-multiple-positions-on-the-same-pair-in-parallel" class="md-nav__link">
     <span class="md-ellipsis">
-      Can freqtrade open multiple positions on the same pair in parallel?
+      
+        Can freqtrade open multiple positions on the same pair in parallel?
+      
     </span>
   </a>
   
@@ -1963,7 +2370,9 @@
           <li class="md-nav__item">
   <a href="#the-bot-does-not-start" class="md-nav__link">
     <span class="md-ellipsis">
-      The bot does not start
+      
+        The bot does not start
+      
     </span>
   </a>
   
@@ -1972,7 +2381,9 @@
           <li class="md-nav__item">
   <a href="#the-bot-starts-but-in-stopped-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      The bot starts, but in STOPPED mode
+      
+        The bot starts, but in STOPPED mode
+      
     </span>
   </a>
   
@@ -1981,7 +2392,9 @@
           <li class="md-nav__item">
   <a href="#i-have-waited-5-minutes-why-hasnt-the-bot-made-any-trades-yet" class="md-nav__link">
     <span class="md-ellipsis">
-      I have waited 5 minutes, why hasn't the bot made any trades yet?
+      
+        I have waited 5 minutes, why hasn't the bot made any trades yet?
+      
     </span>
   </a>
   
@@ -1990,7 +2403,9 @@
           <li class="md-nav__item">
   <a href="#i-have-made-12-trades-already-why-is-my-total-profit-negative" class="md-nav__link">
     <span class="md-ellipsis">
-      I have made 12 trades already, why is my total profit negative?
+      
+        I have made 12 trades already, why is my total profit negative?
+      
     </span>
   </a>
   
@@ -1999,7 +2414,9 @@
           <li class="md-nav__item">
   <a href="#id-like-to-make-changes-to-the-config-can-i-do-that-without-having-to-kill-the-bot" class="md-nav__link">
     <span class="md-ellipsis">
-      I’d like to make changes to the config. Can I do that without having to kill the bot?
+      
+        I’d like to make changes to the config. Can I do that without having to kill the bot?
+      
     </span>
   </a>
   
@@ -2008,7 +2425,9 @@
           <li class="md-nav__item">
   <a href="#why-does-my-bot-not-sell-everything-it-bought" class="md-nav__link">
     <span class="md-ellipsis">
-      Why does my bot not sell everything it bought?
+      
+        Why does my bot not sell everything it bought?
+      
     </span>
   </a>
   
@@ -2017,7 +2436,9 @@
           <li class="md-nav__item">
   <a href="#i-deposited-more-funds-to-the-exchange-but-my-bot-doesnt-recognize-this" class="md-nav__link">
     <span class="md-ellipsis">
-      I deposited more funds to the exchange, but my bot doesn't recognize this
+      
+        I deposited more funds to the exchange, but my bot doesn't recognize this
+      
     </span>
   </a>
   
@@ -2026,7 +2447,9 @@
           <li class="md-nav__item">
   <a href="#i-want-to-use-incomplete-candles" class="md-nav__link">
     <span class="md-ellipsis">
-      I want to use incomplete candles
+      
+        I want to use incomplete candles
+      
     </span>
   </a>
   
@@ -2035,7 +2458,20 @@
           <li class="md-nav__item">
   <a href="#is-there-a-setting-to-only-exit-the-trades-being-held-and-not-perform-any-new-entries" class="md-nav__link">
     <span class="md-ellipsis">
-      Is there a setting to only Exit the trades being held and not perform any new Entries?
+      
+        Is there a setting to only Exit the trades being held and not perform any new Entries?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-sold-the-bots-capital-and-now-theres-errors-in-the-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I sold the bot's capital and now there's errors in the log
+      
     </span>
   </a>
   
@@ -2044,7 +2480,9 @@
           <li class="md-nav__item">
   <a href="#i-want-to-run-multiple-bots-on-the-same-machine" class="md-nav__link">
     <span class="md-ellipsis">
-      I want to run multiple bots on the same machine
+      
+        I want to run multiple bots on the same machine
+      
     </span>
   </a>
   
@@ -2053,7 +2491,9 @@
           <li class="md-nav__item">
   <a href="#im-getting-impossible-to-load-strategy-when-starting-the-bot" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting "Impossible to load Strategy" when starting the bot
+      
+        I'm getting "Impossible to load Strategy" when starting the bot
+      
     </span>
   </a>
   
@@ -2062,7 +2502,9 @@
           <li class="md-nav__item">
   <a href="#im-getting-missing-data-fillup-messages-in-the-log" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting "Missing data fillup" messages in the log
+      
+        I'm getting "Missing data fillup" messages in the log
+      
     </span>
   </a>
   
@@ -2071,7 +2513,9 @@
           <li class="md-nav__item">
   <a href="#im-getting-price-jump-between-2-candles-detected" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting "Price jump between 2 candles detected"
+      
+        I'm getting "Price jump between 2 candles detected"
+      
     </span>
   </a>
   
@@ -2080,7 +2524,9 @@
           <li class="md-nav__item">
   <a href="#i-want-to-reset-the-bots-database" class="md-nav__link">
     <span class="md-ellipsis">
-      I want to reset the bot's database
+      
+        I want to reset the bot's database
+      
     </span>
   </a>
   
@@ -2089,7 +2535,20 @@
           <li class="md-nav__item">
   <a href="#im-getting-outdated-history-for-pair-xxx-in-the-log" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting "Outdated history for pair xxx" in the log
+      
+        I'm getting "Outdated history for pair xxx" in the log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-get-the-message-couldnt-reuse-watch-for-xxx-in-the-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I get the message "Couldn't reuse watch for xxx" in the log
+      
     </span>
   </a>
   
@@ -2098,7 +2557,9 @@
           <li class="md-nav__item">
   <a href="#im-getting-the-exchange-xxx-does-not-support-market-orders-message-and-cannot-run-my-strategy" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm getting the "Exchange XXX does not support market orders." message and cannot run my strategy
+      
+        I'm getting the "Exchange XXX does not support market orders." message and cannot run my strategy
+      
     </span>
   </a>
   
@@ -2107,7 +2568,9 @@
           <li class="md-nav__item">
   <a href="#im-trying-to-start-the-bot-live-but-get-an-api-permission-error" class="md-nav__link">
     <span class="md-ellipsis">
-      I'm trying to start the bot live, but get an API permission error
+      
+        I'm trying to start the bot live, but get an API permission error
+      
     </span>
   </a>
   
@@ -2116,7 +2579,9 @@
           <li class="md-nav__item">
   <a href="#how-do-i-search-the-bot-logs-for-something" class="md-nav__link">
     <span class="md-ellipsis">
-      How do I search the bot logs for something?
+      
+        How do I search the bot logs for something?
+      
     </span>
   </a>
   
@@ -2130,7 +2595,9 @@
         <li class="md-nav__item">
   <a href="#hyperopt-module" class="md-nav__link">
     <span class="md-ellipsis">
-      Hyperopt module
+      
+        Hyperopt module
+      
     </span>
   </a>
   
@@ -2140,7 +2607,9 @@
           <li class="md-nav__item">
   <a href="#why-does-freqtrade-not-have-gpu-support" class="md-nav__link">
     <span class="md-ellipsis">
-      Why does freqtrade not have GPU support?
+      
+        Why does freqtrade not have GPU support?
+      
     </span>
   </a>
   
@@ -2149,7 +2618,9 @@
           <li class="md-nav__item">
   <a href="#how-many-epochs-do-i-need-to-get-a-good-hyperopt-result" class="md-nav__link">
     <span class="md-ellipsis">
-      How many epochs do I need to get a good Hyperopt result?
+      
+        How many epochs do I need to get a good Hyperopt result?
+      
     </span>
   </a>
   
@@ -2158,31 +2629,9 @@
           <li class="md-nav__item">
   <a href="#why-does-it-take-a-long-time-to-run-hyperopt" class="md-nav__link">
     <span class="md-ellipsis">
-      Why does it take a long time to run hyperopt?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#edge-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      Edge module
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Edge module">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#edge-implements-interesting-approach-for-controlling-position-size-is-there-any-theory-behind-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      Edge implements interesting approach for controlling position size, is there any theory behind it?
+        Why does it take a long time to run hyperopt?
+      
     </span>
   </a>
   
@@ -2196,7 +2645,20 @@
         <li class="md-nav__item">
   <a href="#official-channels" class="md-nav__link">
     <span class="md-ellipsis">
-      Official channels
+      
+        Official channels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support policy
+      
     </span>
   </a>
   
@@ -2205,7 +2667,9 @@
         <li class="md-nav__item">
   <a href="#freqtrade-token" class="md-nav__link">
     <span class="md-ellipsis">
-      "Freqtrade token"
+      
+        "Freqtrade token"
+      
     </span>
   </a>
   
@@ -2221,11 +2685,17 @@
 
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
+  
+    <a href="https://github.com/freqtrade/freqtrade/edit/develop/docs/faq.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
   
   
 
@@ -2307,6 +2777,11 @@ To force an immediate update, you can use <code>/reload_config</code> - which wi
 <p>You can use "current" market data by using the <a href="../strategy-customization/#orderbookpair-maximum">dataprovider</a>'s orderbook or ticker methods - which however cannot be used during backtesting.</p>
 <h3 id="is-there-a-setting-to-only-exit-the-trades-being-held-and-not-perform-any-new-entries">Is there a setting to only Exit the trades being held and not perform any new Entries?<a class="headerlink" href="#is-there-a-setting-to-only-exit-the-trades-being-held-and-not-perform-any-new-entries" title="Permanent link">&para;</a></h3>
 <p>You can use the <code>/stopentry</code> command in Telegram to prevent future trade entry, followed by <code>/forceexit all</code> (sell all open trades).</p>
+<h3 id="i-sold-the-bots-capital-and-now-theres-errors-in-the-log">I sold the bot's capital and now there's errors in the log<a class="headerlink" href="#i-sold-the-bots-capital-and-now-theres-errors-in-the-log" title="Permanent link">&para;</a></h3>
+<p>Freqtrade assumes that the trades it opens are managed only though the bot.<br />
+If you happen to (accidentally) sell the bot's capital, freqtrade will try to recover by trying to re-find on-exchange orders.</p>
+<p>This is a best-effort approach, and will not work in all cases, especially when using order types that are not supported by freqtrade (OCO, iceberg, etc.), or when working with older trades (where the exchange no longer provides full order information).
+The exact limits will vary between exchanges - with the details usually being documented in the exchange's API documentation.</p>
 <h3 id="i-want-to-run-multiple-bots-on-the-same-machine">I want to run multiple bots on the same machine<a class="headerlink" href="#i-want-to-run-multiple-bots-on-the-same-machine" title="Permanent link">&para;</a></h3>
 <p>Please look at the <a href="../advanced-setup/#running-multiple-instances-of-freqtrade">advanced setup documentation Page</a>.</p>
 <h3 id="im-getting-impossible-to-load-strategy-when-starting-the-bot">I'm getting "Impossible to load Strategy" when starting the bot<a class="headerlink" href="#im-getting-impossible-to-load-strategy-when-starting-the-bot" title="Permanent link">&para;</a></h3>
@@ -2342,6 +2817,11 @@ As a consequence, Freqtrade will not enter a trade for this pair - as trading on
 <li>Barely traded pair -&gt; Check the pair on the exchange webpage, look at the timeframe your strategy uses. If the pair does not have any volume in some candles (usually visualized with a "volume 0" bar, and a "_" as candle), this pair did not have any trades in this timeframe. These pairs should ideally be avoided, as they can cause problems with order-filling.</li>
 <li>API problem -&gt; API returns wrong data (this only here for completeness, and should not happen with supported exchanges).</li>
 </ul>
+<h3 id="i-get-the-message-couldnt-reuse-watch-for-xxx-in-the-log">I get the message "Couldn't reuse watch for xxx" in the log<a class="headerlink" href="#i-get-the-message-couldnt-reuse-watch-for-xxx-in-the-log" title="Permanent link">&para;</a></h3>
+<p>This is an informational message that the bot tried to use candles from the websocket, but the exchange didn't provide the right information.
+This can happen if there was an interruption to the websocket connection - or if the pair didn't have any trades happen in the timeframe you are using.</p>
+<p>Freqtrade will handle this gracefully by falling back to the REST api.
+While this makes the iteration slightly slower (due to the REST Api call) - it will not cause any problems to the bot's operation.</p>
 <h3 id="im-getting-the-exchange-xxx-does-not-support-market-orders-message-and-cannot-run-my-strategy">I'm getting the "Exchange XXX does not support market orders." message and cannot run my strategy<a class="headerlink" href="#im-getting-the-exchange-xxx-does-not-support-market-orders-message-and-cannot-run-my-strategy" title="Permanent link">&para;</a></h3>
 <p>As the message says, your exchange does not support market orders and you have one of the <a href="../configuration/#understand-order_types">order types</a> set to "market". Your strategy was probably written with other exchanges in mind and sets "market" orders for "stoploss" orders, which is correct and preferable for most of the exchanges supporting market orders (but not for Gate.io).</p>
 <p>To fix this, redefine order types in the strategy to use "limit" instead of "market":</p>
@@ -2392,9 +2872,7 @@ from a separate terminal window.</li>
 <h3 id="why-does-freqtrade-not-have-gpu-support">Why does freqtrade not have GPU support?<a class="headerlink" href="#why-does-freqtrade-not-have-gpu-support" title="Permanent link">&para;</a></h3>
 <p>First of all, most indicator libraries don't have GPU support - as such, there would be little benefit for indicator calculations.
 The GPU improvements would only apply to pandas-native calculations - or ones written by yourself.</p>
-<p>For hyperopt, freqtrade is using scikit-optimize, which is built on top of scikit-learn.
-Their statement about GPU support is <a href="https://scikit-learn.org/stable/faq.html#will-you-add-gpu-support">pretty clear</a>.</p>
-<p>GPU's also are only good at crunching numbers (floating point operations).
+<p>GPU's are only good at crunching numbers (floating point operations).
 For hyperopt, we need both number-crunching (find next parameters) and running python code (running backtesting).
 As such, GPU's are not too well suited for most parts of hyperopt.</p>
 <p>The benefit of using GPU would therefore be pretty slim - and will not justify the complexity introduced by trying to add GPU support.</p>
@@ -2433,17 +2911,6 @@ of the search space, assuming that the bot never tests the same parameters more 
 <p>Example: 4% profit 650 times vs 0,3% profit a trade 10000 times in a year. If we assume you set the --timerange to 365 days.</p>
 <p>Example:
 <code>freqtrade --config config.json --strategy SampleStrategy --hyperopt SampleHyperopt -e 1000 --timerange 20190601-20200601</code></p>
-<h2 id="edge-module">Edge module<a class="headerlink" href="#edge-module" title="Permanent link">&para;</a></h2>
-<h3 id="edge-implements-interesting-approach-for-controlling-position-size-is-there-any-theory-behind-it">Edge implements interesting approach for controlling position size, is there any theory behind it?<a class="headerlink" href="#edge-implements-interesting-approach-for-controlling-position-size-is-there-any-theory-behind-it" title="Permanent link">&para;</a></h3>
-<p>The Edge module is mostly a result of brainstorming of <a href="https://github.com/mishaker">@mishaker</a> and <a href="https://github.com/creslinux">@creslinux</a> freqtrade team members.</p>
-<p>You can find further info on expectancy, win rate, risk management and position size in the following sources:</p>
-<ul>
-<li><a href="https://www.tradeciety.com/ultimate-math-guide-for-traders/">https://www.tradeciety.com/ultimate-math-guide-for-traders/</a></li>
-<li><a href="https://samuraitradingacademy.com/trading-expectancy/">https://samuraitradingacademy.com/trading-expectancy/</a></li>
-<li><a href="https://www.learningmarkets.com/determining-expectancy-in-your-trading/">https://www.learningmarkets.com/determining-expectancy-in-your-trading/</a></li>
-<li><a href="https://www.lonestocktrader.com/make-money-trading-positive-expectancy/">https://www.lonestocktrader.com/make-money-trading-positive-expectancy/</a></li>
-<li><a href="https://www.babypips.com/trading/trade-expectancy-matter">https://www.babypips.com/trading/trade-expectancy-matter</a></li>
-</ul>
 <h2 id="official-channels">Official channels<a class="headerlink" href="#official-channels" title="Permanent link">&para;</a></h2>
 <p>Freqtrade is using exclusively the following official channels:</p>
 <ul>
@@ -2454,6 +2921,10 @@ of the search space, assuming that the bot never tests the same parameters more 
 <p>Nobody affiliated with the freqtrade project will ask you about your exchange keys or anything else exposing your funds to exploitation.
 Should you be asked to expose your exchange keys or send funds to some random wallet, then please don't follow these instructions.</p>
 <p>Failing to follow these guidelines will not be responsibility of freqtrade.</p>
+<h2 id="support-policy">Support policy<a class="headerlink" href="#support-policy" title="Permanent link">&para;</a></h2>
+<p>We provide free support for Freqtrade on our <a href="https://discord.gg/p7nuUNVfP7">Discord server</a> and via GitHub issues.
+We only support the most recent release (e.g. 2025.8) and the current development branch (e.g. 2025.9-dev).</p>
+<p>If you're on an older version, please follow the <a href="../updating/">upgrade instructions</a> and see if your problem has already been addressed.</p>
 <h2 id="freqtrade-token">"Freqtrade token"<a class="headerlink" href="#freqtrade-token" title="Permanent link">&para;</a></h2>
 <p>Freqtrade does not have a Crypto token offering.</p>
 <p>Token offerings you find on the internet referring Freqtrade, FreqAI or freqUI must be considered to be a scam, trying to exploit freqtrade's popularity for their own, nefarious gains.</p>
@@ -2495,7 +2966,7 @@ Should you be asked to expose your exchange keys or send funds to some random wa
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../edge/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Edge Positioning">
+          <a href="../sql_cheatsheet/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SQL Cheat-sheet">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2505,7 +2976,7 @@ Should you be asked to expose your exchange keys or send funds to some random wa
                 Previous
               </span>
               <div class="md-ellipsis">
-                Edge Positioning
+                SQL Cheat-sheet
               </div>
             </div>
           </a>
@@ -2548,7 +3019,6 @@ Should you be asked to expose your exchange keys or send funds to some random wa
       
 
     <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -2559,14 +3029,15 @@ Should you be asked to expose your exchange keys or send funds to some random wa
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "search.share", "content.code.copy", "navigation.top", "navigation.footer"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "search.share", "content.code.copy", "content.action.edit", "navigation.top", "navigation.footer"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
